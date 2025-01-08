@@ -3,8 +3,14 @@
 import toast from "react-hot-toast";
 
 const CardBoardLink = ({ boardId }) => {
+  // const boardLink = `${
+  //   process.env.NODE_ENV === "development"
+  //     ? "https://feed-bee.vercel.app"
+  //     : "http://localhost:3000"
+  // }/b/${boardId}`;
+
   const boardLink = `${
-    process.env.NODE_ENV === "development"
+    process.env.NODE_ENV === "production"
       ? "https://feed-bee.vercel.app"
       : "http://localhost:3000"
   }/b/${boardId}`;
