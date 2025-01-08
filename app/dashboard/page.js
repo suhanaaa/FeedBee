@@ -2,7 +2,7 @@ import ButtonLogout from "@/components/ButtonLogout";
 import FormNewBoard from "@/components/FormNewBoard";
 import connectMongo from "@/libs/mongoose";
 import User from "@/models/User";
-import Board from "@/models/Board";
+// import Board from "@/models/Board";
 import { auth } from "@/auth";
 import Link from "next/link";
 import ButtonCheckout from "@/components/ButtonCheckout";

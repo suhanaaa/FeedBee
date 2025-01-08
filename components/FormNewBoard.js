@@ -22,6 +22,8 @@ const FormNewBoard = () => {
 
       setName("");
 
+      console.log("Board created:", data);
+
       toast.success("Board created!");
 
       router.refresh();
