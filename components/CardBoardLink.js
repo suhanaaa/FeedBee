@@ -5,8 +5,8 @@ import toast from "react-hot-toast";
 const CardBoardLink = ({ boardId }) => {
   const boardLink = `${
     process.env.NODE_ENV === "development"
-      ? "http://localhost:3000"
-      : "https://feed-bee.vercel.app"
+      ? "https://feed-bee.vercel.app"
+      : "http://localhost:3000"
   }/b/${boardId}`;
 
   const copyLink = () => {
