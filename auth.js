@@ -53,6 +53,14 @@ const config = {
   adapter: MongoDBAdapter(clientPromise),
 
   secret: process.env.AUTH_SECRET,
+
+  //Trusted host
+
+  trustedHosts: [
+    "74.208.221.72:3079",
+    "rainytools.imshine.one",
+    "localhost:3079", // (optional for dev)
+  ],
 };
 
 export const { handlers, signIn, signOut, auth } = NextAuth(config);
