@@ -26,7 +26,7 @@ const ButtonDeletePost = ({ postId }) => {
       }
     } catch (error) {
       const errorMessage =
-        error.response?.data?.error || error.message || "Something went wrong";
+        error.response?.data?.error || error.message || "Something went wrong!";
 
       toast.error(errorMessage);
     } finally {
